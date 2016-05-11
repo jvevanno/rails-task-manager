@@ -8,3 +8,9 @@ class CreateTasks < ActiveRecord::Migration
     end
   end
 end
+
+class AddTasks < ActiveRecord::Migration
+  def change
+    add_column :tasks, :name, :string
+  end
+end

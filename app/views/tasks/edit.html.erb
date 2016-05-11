@@ -1,0 +1,8 @@
+<%= form_for(@tasks) do |task| %>
+  <%= task.label :name, "Which task ?" %>
+  <%= task.text_field :name %>
+  <%= task.label :status, "Which status ?" %>
+  <%= task.text_field :status %>
+
+  <%= task.submit %>
+<% end %>
